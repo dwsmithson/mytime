@@ -44,5 +44,12 @@ public class Person {
         return tasks;
     }
 
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "tasks=" + tasks +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

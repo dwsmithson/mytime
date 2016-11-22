@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
  * Created by dwsmithson on 11/13/16.
  */
 @Entity
-class Task {
+public class Task {
 
     @JsonIgnore
     @ManyToOne
@@ -39,5 +39,14 @@ class Task {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "person=" + person +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
